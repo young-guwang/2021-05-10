@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 반환값이 없는 함수
+        function printMsg(msg){
+            document.write(msg+"<br>");
+        }
+        //반환값이 있는 함수
+        function ctof(degree){ /// 섭씨를 화씨로
+            return (degree*9/5)+ 32;
+        }
+    </script>
+</head>
+<body>
+    <script>
+        // for (let i = 1; i<=9; i++){
+        //     printMsg("9*" + i + "=" + (9*i));
+        // }
+            
+        for(let i = 1; i <= 100; i++){
+            printMsg("섭씨: " + i + "도 ==> 화씨 " + ctof(i) + "F");
+        }
+    </script>
+</body>
+</html>
